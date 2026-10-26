@@ -192,28 +192,3 @@ if (attendance < 60 || hasWarning) {
 } else {
     console.log("Talablar bajarilmadi");
 }
-
-//=======================================================================//
-
-// 10-masala. Onlayn imtihonga kirish //
-
-let isRegistered = true;
-let hasPaid = true;
-let isBanned = false;
-let examScore = 0;
-
-if (!isRegistered) {
-    console.log("Avval ro‘yxatdan o‘ting");
-} else if (!hasPaid) {
-    console.log("To‘lovni amalga oshiring");
-} else if (isBanned) {
-    console.log("Imtihonga kirish taqiqlangan");
-} else if (examScore < 0 || examScore > 100) {
-    console.log("Noto‘g‘ri natija");
-} else if (examScore === 0) {
-    console.log("Imtihonni boshlashingiz mumkin");
-} else if (examScore < 60) {
-    console.log("Imtihondan o‘tmadingiz");
-} else {
-    console.log("Imtihondan muvaffaqiyatli o‘tdingiz");
-}
