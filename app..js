@@ -142,3 +142,7 @@ if (attendance < 60 || hasWarning) {
 } else {
     console.log("Talablar bajarilmadi");
 }
+
+// ============================================================== //
+
+// 5, 7, 10 shularni qila olamadim //
