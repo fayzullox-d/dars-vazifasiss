@@ -90,35 +90,6 @@ if (q <= 0 || d <= 0 || k <= 0) {
 
 //=======================================================================//
 
-// 5-masala. Yetkazib berish narxi //
-
-let orderPrice = 180000;
-let region = "tashkent";
-let isExpress = true;
-
-let shippingPrice = 0;
-
-if (region === "tashkent") {
-    if (orderPrice >= 200000) {
-        shippingPrice = 0;
-    } else {
-        shippingPrice = 15000;
-    }
-} else {
-    shippingPrice = 25000;
-}
-
-if (isExpress) {
-    shippingPrice = shippingPrice + 20000;
-}
-
-let totalPrice = orderPrice + shippingPrice;
-
-console.log("Yetkazib berish narxi: " + shippingPrice + " so'm");
-console.log("Umumiy to'lov: " + totalPrice + " so'm");
-
-//=======================================================================//
-
 // 6-masala. Ishga qabul qilish //
 
 let age = 22;
@@ -134,27 +105,6 @@ if (age < 18) {
     console.log("Qo'shimcha ko'rib chiqiladi");
 } else {
     console.log("Talablarga mos emas");
-}
-
-//=======================================================================//
-
-// 7-masala. Bankomatdan pul yechish //
-
-let balance = 850000;
-let amount = 300000;
-let cardBlocked = false;
-
-if (cardBlocked) {
-    console.log("Karta bloklangan");
-} else if (amount <= 0) {
-    console.log("Summa noto'g'ri");
-} else if (amount > 1000000) {
-    console.log("Kunlik limitdan oshdi");
-} else if (balance < amount) {
-    console.log("Mablag' yetarli emas");
-} else {
-    balance = balance - amount;
-    console.log("Pul muvaffaqiyatli yechildi. Qolgan balans: " + balance + " so'm");
 }
 
 //=======================================================================//
